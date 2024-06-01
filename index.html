@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/1147af4466.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo 1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Head of Sales Operations</p>
+                <h1>Hi, I'm <span>Ramesh Jena</span><br>From Bengaluru, Karnataka</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------about----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" class="about-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Seasoned Sales Head with 4+ years of experience in driving revenue growth, leading
+                        high-performing teams, and developing strategic sales initiatives. Passionate about client
+                        relationships and achieving outstanding results.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('tools')">Tools</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links  " onclick="opentab('education')">Education</p>
+                        <p class="tab-links  " onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Strategic Sales Planning</span></li>
+                            <li><span>Consultative Selling</span></li>
+                            <li><span>Market Analysis</span></li>
+                            <li><span>Client Relationship Management</span></li>
+                            <li><span>Team Leadership and Mentoring</span></li>
+                            <li><span>Negotiation and Closing</span></li>
+                            <li><span>Sales Forecasting</span></li>
+                            <li><span>CRM Proficiency</span></li>
+                            <li><span>Data-Driven Decision Making</span></li>
+                            <li><span>Customer Feedback Integration</span></li>
+                            <li><span>Performance Management</span></li>
+                            <li><span>Communication and Presentation Skills</span></li>
+                            <li><span>Problem-Solving</span></li>
+                            <li><span>Lead Generation and Conversion</span></li>
+                            <li><span>Sales Training and Development</span></li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="tools">
+                        <ul>
+                            <li><span>CRM Software</span> Salesforce, HubSpot</li>
+                            <li><span>Sales Analytics</span> Tableau, Microsoft Power BI</li>
+                            <li><span>Communication Tools</span> Slack, Microsoft Teams</li>
+                            <li><span>Email Marketing</span> Mailchimp, Constant Contact</li>
+                            <li><span>Project Management</span> Trello, Asana</li>
+                            <li><span>Data Management</span> Microsoft Excel, Google Sheets</li>
+                            <li><span>Presentation Software</span> Microsoft PowerPoint, Google Slides</li>
+                            <li><span>Document Management</span> Google Docs, Microsoft Word</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <p>
+                            As an enthusiastic and dedicated professional, I have gained valuable experience in software
+                            development and engineering. Below are my recent roles and contributions:
+                        </p>
+                        <ul>
+                            <li>
+                                <span>Software Developer at Hypersage Technology</span><br>
+                                Currently contributing as a software developer, actively engaged in developing
+                                cutting-edge solutions using a diverse tech stack. Collaborating with a dynamic team to
+                                deliver innovative software solutions.
+                            </li>
+                            <li>
+                                <span>Assistance System Engineer Trainee at Wowoni Private Limited</span><br>
+                                Contributed to a FLEXCUBE Application project using Spring Boot, Java, and Oracle DB.
+                                Specialized in bug resolution, documentation, and code deployment on GitHub.
+                                Collaborated effectively with senior team members, gaining valuable experience and
+                                enhancing technical skills.
+                            </li>
+                            <li>
+                                Submitted monthly reports and managed my team under my supervision.
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology (2018 - 2022) (8.77 CGPA)</span><br> Mechanical Engineering
+                                from Kalam Institute Of Technology, Berhampur, Odisha.</li>
+                            <li><span>12th (2018 - 2022)</span><br> Science from Tara Tarini College,
+                                Purushottampur,Odisha</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Cycling</span><br></li>
+                            <li><span>Traveling</span><br></li>
+                            <li><span>Cooking</span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------services----------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Consultative Selling</h2>
+                    <p>I employ a consultative selling approach to understand the unique needs and challenges of each
+                        client. This method allows me to provide tailored solutions that drive real business results.
+                    </p>
+                    <a href="#">Learn more</a>
+                    <h2>Market Analysis & Strategy Development</h2>
+                    <p> I conduct comprehensive market analysis to identify opportunities and threats. Based on this
+                        analysis, I develop robust sales strategies that align with market trends and client needs.</p>
+                    <a href="#">Learn more</a>
+                    <h2>Relationship Management</h2>
+                    <p>Building and maintaining strong, long-lasting relationships with clients is a cornerstone of my
+                        sales philosophy. I focus on trust, transparency, and continuous value delivery.</p>
+                    <a href="#">Learn more</a>
+                    <h2>Sales Team Leadership & Training</h2>
+                    <p>Leading, mentoring, and training sales teams to achieve their highest potential is one of my key
+                        strengths. I focus on skill development, motivation, and performance tracking.</p>
+                    <a href="#">Learn more</a>
+                    <h2>Negotiation & Closing</h2>
+                    <p>I excel in negotiation, ensuring mutually beneficial agreements that foster long-term
+                        partnerships. My closing techniques are designed to seal deals efficiently while maintaining
+                        client satisfaction.</p>
+                    <a href="#">Learn more</a>
+                    <h2>CRM & Sales Tools Utilization</h2>
+                    <p>Proficient in utilizing Customer Relationship Management (CRM) systems and other sales tools to
+                        track performance, manage leads, and streamline the sales process.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-----------------------------portfolio------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-11.jpg">
+                    <div class="layer">
+                        <h3>Hotel User Rating Management</h3>
+                        <p>This application has been designed based on the Microservices architecture, incorporating
+                            systems for users, hotels, and ratings.</p>
+                        <a href="https://github.com/SimanchalaSethi/Hotel-User-Rating-Management"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-112.jpg">
+                    <div class="layer">
+                        <h3>Back-End-Bank-Application</h3>
+                        <p>This is a secure and user-friendly online
+                            banking system using Java and Spring Boot. Designed a MySQL database with tables for user
+                            details, account information, and transaction
+                            records. Implemented features such as user
+                            authentication, online fund transfers, balance
+                            checks, and transaction history retrieval. Utilized
+                            JSON Web Tokens (JWT) for secure authentication.</p>
+                        <a href="https://github.com/SimanchalaSethi/Back-End-Bank-Application"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Shopping-App-Prototype</h3>
+                        <p>This is a simple shopping web prototype Java web app.</p>
+                        <a href="https://github.com/SimanchalaSethi/Shopping-App-Prototype"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -------------------------------contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>jenaramesh8895@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6370138771</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ramesh-jena-528198250/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/SimanchalaSethi"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/simanchala_ss/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Simanchala Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <body>
+
+    </body>
+
+</html>
